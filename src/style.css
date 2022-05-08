@@ -5,7 +5,7 @@
 }
 
 body {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 h1,
@@ -28,10 +28,10 @@ h3 {
 }
 
 p {
-  padding: 20px;
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
+  margin: 20px 0;
 }
 
 .navigation-links {
@@ -90,10 +90,14 @@ p {
   text-decoration: none;
 }
 @media (max-width: 576px) {
+  body {
+    margin: 100px 0;
+  }
   h1,
   h2,
   h3,
   p {
+    text-align: center;
     line-height: 1.5;
   }
   h1 {
@@ -102,8 +106,15 @@ p {
   h2 {
     font-size: 32px;
   }
-  .container {
-    text-align: center;
-    padding: 20px 0;
+  img {
+    margin-bottom: 10px;
+  }
+  .navbar {
+    padding: 8px 0;
+  }
+  .app-link {
+    display: block;
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
